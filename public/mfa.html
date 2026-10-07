@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Verificación MFA - TechStore</title>
+
+    <link
+        rel="stylesheet"
+        href="css/styles.css"
+    >
+</head>
+
+<body>
+
+    <div class="auth-container">
+
+        <div class="auth-card">
+
+            <h1>🔐 Verificación MFA</h1>
+
+            <p>
+                Hemos enviado un código de
+                verificación de 6 dígitos.
+            </p>
+
+            <p>
+                Ingresa el código para continuar.
+            </p>
+
+            <form id="mfaForm">
+
+                <input
+                    type="text"
+                    id="code"
+                    maxlength="6"
+                    minlength="6"
+                    pattern="[0-9]{6}"
+                    inputmode="numeric"
+                    placeholder="Código de 6 dígitos"
+                    required
+                >
+
+                <button type="submit">
+                    Verificar código
+                </button>
+
+            </form>
+
+            <div
+                id="message"
+                style="margin-top: 15px;"
+            ></div>
+
+            <br>
+
+            <a href="index.html">
+                Volver al inicio
+            </a>
+
+        </div>
+
+    </div>
+
+    <script src="js/mfa.js"></script>
+
+</body>
+
+</html>

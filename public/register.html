@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>TechStore - Registro</title>
+
+    <link
+        rel="stylesheet"
+        href="css/styles.css"
+    >
+
+</head>
+
+<body class="auth-body">
+
+<div class="auth-container">
+
+    <div class="brand">
+
+        <div class="logo">
+            T
+        </div>
+
+        <h1>TechStore</h1>
+
+        <p>Crear nueva cuenta</p>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Registro</h2>
+
+        <p class="subtitle">
+            Completa tus datos
+        </p>
+
+        <form id="registerForm">
+
+            <label>Nombre completo</label>
+
+            <input
+                type="text"
+                id="fullName"
+                placeholder="Juan Perez"
+                required
+            >
+
+            <label>Email</label>
+
+            <input
+                type="email"
+                id="email"
+                placeholder="correo@techstore.com"
+                required
+            >
+
+            <label>Contraseña</label>
+
+            <input
+                type="password"
+                id="password"
+                placeholder="Admin123!"
+                required
+            >
+
+            <small>
+                Minimo 8 caracteres,
+                una mayuscula,
+                un numero y un caracter especial.
+            </small>
+
+            <label>Tienda</label>
+
+            <select id="store" required>
+
+                <option value="">
+                    Seleccionar tienda
+                </option>
+
+                <option value="Lima Centro">
+                    Lima Centro
+                </option>
+
+                <option value="Santa Anita">
+                    Santa Anita
+                </option>
+
+                <option value="Miraflores">
+                    Miraflores
+                </option>
+
+                <option value="San Miguel">
+                    San Miguel
+                </option>
+
+            </select>
+
+            <button
+                type="submit"
+                class="btn-primary"
+            >
+                Crear cuenta
+            </button>
+
+        </form>
+
+        <div id="message"></div>
+
+        <p class="register-text">
+
+            Ya tienes una cuenta?
+
+            <a href="index.html">
+                Iniciar sesión
+            </a>
+
+        </p>
+
+    </div>
+
+</div>
+
+<script src="js/register.js"></script>
+
+</body>
+
+</html>

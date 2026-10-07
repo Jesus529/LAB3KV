@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TechStore - Login</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="auth-body">
+
+<div class="auth-container">
+
+    <div class="brand">
+
+        <div class="logo">
+            T
+        </div>
+
+        <h1>TechStore</h1>
+
+        <p>Sistema de Gestión de Inventario</p>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Iniciar sesión</h2>
+
+        <p class="subtitle">
+            Ingresa tus credenciales
+        </p>
+
+        <form id="loginForm">
+
+            <label>Email</label>
+
+            <input
+                type="email"
+                id="email"
+                placeholder="correo@techstore.com"
+                required
+            >
+
+            <label>Contraseña</label>
+
+            <input
+                type="password"
+                id="password"
+                placeholder="********"
+                required
+            >
+
+            <button
+                type="submit"
+                class="btn-primary"
+            >
+                Iniciar sesión
+            </button>
+
+        </form>
+
+        <div id="message"></div>
+
+        <div class="divider">
+            <span>O continúa con</span>
+        </div>
+
+        <div class="social-buttons">
+
+            <a
+                href="/api/auth/google"
+                class="google"
+            >
+                🔵 Google
+            </a>
+
+            <a
+                href="/api/auth/github"
+                class="github"
+            >
+                ⚫ GitHub
+            </a>
+
+        </div>
+
+        <p class="register-text">
+
+            ¿No tienes una cuenta?
+
+            <a href="register.html">
+                Registrarte
+            </a>
+
+        </p>
+
+    </div>
+
+</div>
+
+<script src="js/login.js"></script>
+
+</body>
+</html>
